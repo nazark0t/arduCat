@@ -1,0 +1,56 @@
+.tools/
+.codex-attachments/
+**/.pio/
+**/sdkconfig.mic-test
+**/sdkconfig.mic-test.old
+**/__pycache__/
+
+# Private working context and host-specific provisioning
+/CONTEXT.md
+/infra/
+
+# Marketplace checkout/session data and local third-party clone
+/integrations/ozon-customer-mcp/
+/integrations/ozon-parts-results.jsonl
+/integrations/ozon-parts-check.mjs
+/integrations/ozon-search-check.mjs
+/integrations/Dockerfile.ozon-local
+
+# Credentials, local IDE/MCP settings and caches
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*.json
+cookies*.json
+storage-state*.json
+.cursor/
+.vscode/
+.idea/
+.cache/
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Generated firmware, device dumps, recordings and logs
+build/
+dist/
+*.pyc
+*.bin
+*.elf
+*.map
+*.log
+*.wav
+*.pcm
+*.mp3
+sdkconfig
+sdkconfig.old
+sdkconfig.range-test
+sdkconfig.range-test.old
